@@ -1,5 +1,5 @@
-$GitHub_List = Invoke-WebRequest https://raw.githubusercontent.com/dfapac/list/main/tools_list
-$GitHub_LatestVersion = Invoke-WebRequest https://raw.githubusercontent.com/dfapac/list/main/tools_latest
+$GitHub_List = Invoke-WebRequest https://raw.githubusercontent.com/cfapac/list/main/tools_list
+$GitHub_LatestVersion = Invoke-WebRequest https://raw.githubusercontent.com/cfapac/list/main/tools_latest
 
 $List_Installed = Get-ChildItem "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall"
 $List_Tools = $GitHub_List.Content
